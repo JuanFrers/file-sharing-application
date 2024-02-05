@@ -1,4 +1,5 @@
-export type HttpResponse<T = any> = {
+export type HttpResponse<TBody = any, THeaders = any> = {
   statusCode: number;
-  body?: T;
+  body?: TBody;
+  headers?: THeaders;
 };
